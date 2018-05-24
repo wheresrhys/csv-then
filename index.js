@@ -2,7 +2,7 @@ const parse = require('csv-parse')
 const fs = require('fs');
 
 const fromFile = (path, options) => new Promise((resolve, reject) => {
-	const parser = parse(options);
+	const parser = parse(Object.assign({columns: true}, options));
 	const file = fs.createReadStream(path)
 	const output = [];
 

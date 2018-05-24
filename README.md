@@ -10,7 +10,7 @@ Really simple, promise-based csv file reader
 
 Returns a promise for the csv (or multiple csvs concatenated intoa single array if using fromFiles)
 
-options are anythng compatible with csv-parse http://csv.adaltas.com/parse/
+options are anythng compatible with csv-parse http://csv.adaltas.com/parse/. It defaults to `{columns: true}`
 
 Sorry for the poor docs - very quick hack to scratch an itch, which will become
 better tested, documented if people start to use it
